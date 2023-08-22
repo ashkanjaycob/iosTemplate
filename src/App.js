@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Navbar from './Components/Navbar.js'
+import Hero from './Components/Hero.js'
+import Cards from './Components/Crads.js'
+import Owl from "./Components/Owl.js";
+import LongBaner from './Components/LongBaner.js'
+import Footer from './Components/Footer.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    state = {}
+    render() {
+        return (
+            <>
+                <Navbar />
+                <Hero />
+                <Cards />
+                <Owl />
+                <LongBaner />
+                <Footer />
+
+            </>
+        );
+    }
 }
 
 export default App;
+
+
+
