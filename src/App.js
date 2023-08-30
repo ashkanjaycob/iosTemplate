@@ -5,6 +5,7 @@ import Cards from './Components/Crads.js'
 import Owl from "./Components/Owl.js";
 import LongBaner from './Components/LongBaner.js'
 import Footer from './Components/Footer.js'
+import Search from './Components/Search.js'
 
 class App extends Component {
     state = {}
@@ -14,6 +15,7 @@ class App extends Component {
                 <Navbar />
                 <Hero />
                 <Cards />
+                <Search />
                 <Owl />
                 <LongBaner />
                 <Footer />
